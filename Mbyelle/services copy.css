@@ -1,0 +1,435 @@
+
+*{
+     
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+      font-family:"Poppins", sans-serif;
+      text-decoration: none;
+      list-style: none;
+
+}
+
+:root{
+    --body-color:white;
+   --nav-color: #F4D3D8;
+   --text-color:grey;
+
+
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--body-color);
+   
+}
+/*navbar*/
+ header{
+    background-color: var(--nav-color);
+    padding: 20px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.logo{      
+    font-family: "Poppins",sans-serif;
+    font-size:20px;
+    color:rgb(46, 1, 1);
+    font-weight: 400px;
+   
+}
+
+.hamburger{
+    display:none;
+    font-size: 28px;
+    background:none;
+    border:none;
+    cursor: pointer;
+}
+
+nav ul{
+   display: flex;
+   align-items: center;
+   gap:16px;
+}
+
+nav ul li{
+    display:inline-block;
+}
+
+nav ul li a{
+    font-family: "Poppins",sans-serif;
+    color:rgb(46, 1, 1);
+    font-size:20px;
+    font-weight: 500px;
+    margin-right:10px;
+}
+
+nav ul li a:hover{
+    color: white;
+}
+
+.Services-container{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    min-height: 300px;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.Services-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .7;
+}
+
+.Services-container h1{
+    font-family:'Playfair Display', serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(2.5rem, 8vw, 5.5rem);
+    text-align: center;
+    color:rgb(46, 1, 1);
+    width: 90%;
+}
+
+
+/* ====== SECTION LAYOUT (BASE) ====== */
+.consultation-section,
+.vendor-section,
+.engagement-section,
+.rsvp-section,
+.onsite-section{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    padding:60px 8%;
+    flex-wrap:wrap;
+}
+
+/* IMAGE CONTAINER */
+.consultation-image,
+.service-image,
+.vendor-image,
+.engagement-img,
+.rsvp-img,
+.onsite-image{
+   flex: 1;
+   padding: 0;
+}
+.consultation-image img,
+.vendor-image img,
+.engagement-img img,
+.rsvp-img img,
+.onsite-image img{
+    width:100%;
+    max-width:550px;
+    height:auto;
+    object-fit:cover;
+    border-radius:10px;
+    display:block;
+    margin:auto;
+}
+
+/* TEXT CONTAINER */
+.consultation-text,
+.vendor-text,
+.engagement-text,
+.rsvp-text,
+.onsite-text{
+
+   flex: 1;
+   text-align: left;
+}
+
+/* HEADINGS */
+.consultation-text h2,
+.vendor-text h2,
+.engagement-text h2,
+.rsvp-text h2,
+.onsite-text h2{
+    font-family: "Poppins",sans-serif;
+    font-size:30px;
+    color:rgb(46, 1, 1);
+    font-style: italic;
+   text-align: center;
+   font-style:bold;
+   flex: 1;
+   font-weight: normal;
+   margin-bottom: 20px;
+}
+
+/* PARAGRAPHS */
+.consultation-text p,
+.vendor-text p,
+.engagement-text p,
+.rsvp-text p,
+.onsite-text p{
+    font-family: "Poppins",sans-serif;
+   font-size: clamp(16px, 2.2vw, 20px);
+   letter-spacing:1px;
+   max-width:600px;
+   margin:auto;
+   flex: 1;
+   line-height: 1.8;
+   color: #333;
+}
+
+/* ===== FOOTER ===== */
+footer{
+   background: var(--nav-color);
+   padding: 20px 10px;
+   text-align: center;
+}
+
+.footer-top{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 40px;
+  flex-wrap:wrap;
+}
+
+.footer-item{
+   display: flex;
+   align-items: center;
+   gap: 12px;
+}
+
+.icon{
+   width: 28px;
+   height: 28px;
+}
+
+.footer-item span,
+.footer-bottom p{
+   font-size: 1rem;
+   color: #333;
+   margin: 4px 0;
+}
+
+/* ===== TABLET + PHONE ===== */
+
+@media (max-width:1023px){
+
+header{
+    padding:15px 5%;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    position:relative;
+    
+}
+
+.logo{
+    font-size: 20px;
+}
+/*HAMBURGER*/
+.hamburger{
+ position: absolute;
+ top:15px;
+ right:4%;
+ display:block;
+ margin-left: auto;
+ font-size:24px;
+ background:none;
+ border:none;
+ cursor: pointer;
+ color:var(--text-color);
+}
+/*mobile nav*/
+nav{
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    z-index:1000;
+}
+/* HIDE MENU */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    /* SHOW MENU AFTER CLICK */
+    nav ul.active {
+        display: flex;
+    }
+     nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    nav ul li a {
+        display: block;
+        font-size: 18px;
+        margin: 0;
+    }
+
+.Services-container{
+    height:55vh;
+}
+
+.consultation-section,
+.vendor-section,
+.engagement-section,
+.rsvp-section,
+.onsite-section{
+
+    flex-direction:column;
+    text-align:center;
+    padding:40px 30px;
+
+}
+
+.consultation-text,
+.vendor-text,
+.engagement-text,
+.rsvp-text,
+.onsite-text{
+
+    text-align:center;
+
+}
+
+.footer-top{
+
+    flex-direction:column;
+    gap:25px;
+
+}
+
+}
+@media (max-width:767px){
+
+header{
+    flex-direction:row;
+    text-align:left;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+
+    font-size:26px;
+
+}
+
+ul{
+
+    flex-direction:row;
+    align-items:center;
+    gap:12px;
+
+}
+
+li a{
+
+    font-size:18px;
+
+}
+
+.Services-container{
+
+    height:40vh;
+
+}
+
+.Services-container h1{
+
+    font-size:45px;
+
+}
+
+.consultation-section,
+.vendor-section,
+.engagement-section,
+.rsvp-section,
+.onsite-section{
+
+    padding:30px 20px;
+
+}
+
+.consultation-text p,
+.vendor-text p,
+.engagement-text p,
+.rsvp-text p,
+.onsite-text p{
+
+    font-size:18px;
+    line-height:1.6;
+
+}
+
+.footer-item{
+
+    flex-direction:column;
+
+}
+
+.footer-item span,
+.footer-bottom p{
+
+    font-size:16px;
+
+}
+
+}
+/*@media (max-width:767px){
+
+.logo{
+
+    font-size:1.1rem;
+
+}
+.hamburger{
+    font-size:26px;
+}
+
+.Services-container{
+
+    height:35vh;
+
+}
+
+.Services-container h1{
+
+    font-size:35px;
+
+}
+
+.consultation-text h2,
+.vendor-text h2,
+.engagement-text h2,
+.rsvp-text h2,
+.onsite-text h2{
+
+    font-size:22px;
+
+}
+
+.consultation-text p,
+.vendor-text p,
+.engagement-text p,
+.rsvp-text p,
+.onsite-text p{
+
+    font-size:16px;
+
+}
+
+}*/

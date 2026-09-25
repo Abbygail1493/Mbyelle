@@ -1,0 +1,195 @@
+
+.Services-container{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    min-height: 300px;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.Services-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .7;
+}
+
+.Services-container h1{
+    font-family:'Playfair Display', serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(2.5rem, 8vw, 5.5rem);
+    text-align: center;
+    color:rgb(46, 1, 1);
+    width: 90%;
+}
+
+
+/* ====== SECTION LAYOUT (BASE) ====== */
+.consultation-section,
+.vendor-section,
+.engagement-section,
+.rsvp-section,
+.onsite-section{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    padding:60px 8%;
+    flex-wrap:wrap;
+}
+
+/* IMAGE CONTAINER */
+.consultation-image,
+.service-image,
+.vendor-image,
+.engagement-img,
+.rsvp-img,
+.onsite-image{
+   flex: 1;
+   padding: 0;
+}
+.consultation-image img,
+.vendor-image img,
+.engagement-img img,
+.rsvp-img img,
+.onsite-image img{
+    width:100%;
+    max-width:550px;
+    height:auto;
+    object-fit:cover;
+    border-radius:10px;
+    display:block;
+    margin:auto;
+}
+
+/* TEXT CONTAINER */
+.consultation-text,
+.vendor-text,
+.engagement-text,
+.rsvp-text,
+.onsite-text{
+
+   flex: 1;
+   text-align: left;
+}
+
+/* HEADINGS */
+.consultation-text h2,
+.vendor-text h2,
+.engagement-text h2,
+.rsvp-text h2,
+.onsite-text h2{
+    font-family: "Poppins",sans-serif;
+    font-size:30px;
+    color:rgb(46, 1, 1);
+    font-style: italic;
+   text-align: center;
+   font-style:bold;
+   flex: 1;
+   font-weight: normal;
+   margin-bottom: 20px;
+}
+
+/* PARAGRAPHS */
+.consultation-text p,
+.vendor-text p,
+.engagement-text p,
+.rsvp-text p,
+.onsite-text p{
+    font-family: "Poppins",sans-serif;
+   font-size: clamp(16px, 2.2vw, 20px);
+   letter-spacing:1px;
+   max-width:600px;
+   margin:auto;
+   flex: 1;
+   line-height: 1.8;
+   color: #333;
+}
+
+
+/* ===== TABLET + PHONE ===== */
+
+@media (min-width: 768px) and (max-width: 1023px){
+
+
+
+.Services-container{
+    height:55vh;
+}
+
+.consultation-section,
+.vendor-section,
+.engagement-section,
+.rsvp-section,
+.onsite-section{
+
+    flex-direction:column;
+    text-align:center;
+    padding:40px 30px;
+
+}
+
+.consultation-text,
+.vendor-text,
+.engagement-text,
+.rsvp-text,
+.onsite-text{
+
+    text-align:center;
+
+}
+ 
+
+
+}
+@media (max-width:767px){
+
+   header {
+        padding: 10px 9%;
+        position: relative;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+
+.Services-container{
+
+    height:40vh;
+
+}
+
+.Services-container h1{
+
+    font-size:45px;
+
+}
+
+.consultation-section,
+.vendor-section,
+.engagement-section,
+.rsvp-section,
+.onsite-section{
+
+    padding:30px 20px;
+
+}
+
+.consultation-text p,
+.vendor-text p,
+.engagement-text p,
+.rsvp-text p,
+.onsite-text p{
+
+    font-size:18px;
+    line-height:1.6;
+
+}
+
+}
+

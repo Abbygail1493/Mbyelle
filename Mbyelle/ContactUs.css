@@ -1,0 +1,38 @@
+
+.ContactUs-container{
+  position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.ContactUs-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+   }
+
+.Contact-text h1 {
+    font-family:'Playfair Display', serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:rgb(46, 1, 1);
+    text-align: center;
+    font-size: clamp(2.5rem, 8vw, 5.5rem);
+    width: 90%;
+}
+
+.Contact-text p {
+      font-family:'Playfair Display', serif;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:rgb(46, 1, 1);
+    text-align: center;
+   font-size: clamp(1rem, 1.5vw, 1.25rem);
+    width: 90%;
+}
