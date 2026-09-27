@@ -146,64 +146,45 @@
 
 
 }
-@media (max-width:767px){
+@media (max-width:767px) {
 
-   header {
-        padding: 10px 9%;
-        position: relative;
+    .Services-container {
+        height: 60vh;
     }
 
-    .logo {
-        font-size: 16px;
+    .Services-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
+    .consultation-section,
+    .vendor-section,
+    .engagement-section,
+    .rsvp-section,
+    .onsite-section {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 25px;
+    }
 
-.Services-container{
+    .consultation-image,
+    .service-image,
+    .vendor-image,
+    .engagement-img,
+    .rsvp-img,
+    .onsite-image {
+        width: 100%;
+        flex: none;
+    }
 
-    height:40vh;
-
+    .consultation-image img,
+    .vendor-image img,
+    .engagement-img img,
+    .rsvp-img img,
+    .onsite-image img {
+        width: 100%;
+        max-width: none;
+        height: auto;
+    }
 }
-
-.Services-container h1{
-
-    font-size:45px;
-
-}
-
-.consultation-section,
-.vendor-section,
-.engagement-section,
-.rsvp-section,
-.onsite-section{
-
-    padding:30px 20px;
-
-}
-.consultation-image img,
-.vendor-image img,
-.engagement-img img,
-.rsvp-img img,
-.onsite-image img{
-    width:100%;
-    max-width:550px;
-    height:auto;
-    object-fit:cover;
-    border-radius:10px;
-    display:block;
-    margin:auto;
-}
-
-
-.consultation-text p,
-.vendor-text p,
-.engagement-text p,
-.rsvp-text p,
-.onsite-text p{
-
-    font-size:18px;
-    line-height:1.6;
-
-}
-
-}
-
