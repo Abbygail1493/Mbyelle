@@ -10,7 +10,7 @@
 
 .Services-container img{
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     opacity: .7;
 }
@@ -179,6 +179,20 @@
     padding:30px 20px;
 
 }
+.consultation-image img,
+.vendor-image img,
+.engagement-img img,
+.rsvp-img img,
+.onsite-image img{
+    width:100%;
+    max-width:550px;
+    height:auto;
+    object-fit:cover;
+    border-radius:10px;
+    display:block;
+    margin:auto;
+}
+
 
 .consultation-text p,
 .vendor-text p,
