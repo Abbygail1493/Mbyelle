@@ -36,3 +36,9 @@
    font-size: clamp(1rem, 1.5vw, 1.25rem);
     width: 90%;
 }
+.Quote{
+    font-family:'Playfair Display', serif;
+    font-size: 18px;
+    text-align: center;
+    color:rgb(94, 4, 4);
+}
