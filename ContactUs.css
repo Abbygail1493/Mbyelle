@@ -51,7 +51,7 @@
     margin: 50px auto;
     align-items: center;
     padding: 30px;
-    background-color: #F4D3D8;
+    background-color: #d6d1d1;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     border-radius: 15px;
     box-sizing: border-box;
@@ -60,7 +60,7 @@
 .contact-form label {
     display: block;
     margin-bottom: 8px;
-    color: maroon;
+     color: rgb(46, 1, 1) ;
     font-weight: 600;
 }
 
@@ -88,7 +88,7 @@
 .contact-form button {
     width: auto;
     padding: 12px 30px;
-    background-color: rgb(46, 1, 1);
+    background-color: rgb(228, 163, 183);
     color: white;
     border: none;
     border-radius: 8px;
