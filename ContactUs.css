@@ -36,7 +36,7 @@
    font-size: clamp(1rem, 1.5vw, 1.25rem);
     width: 90%;
 }
-.Quote{
+.Quote h1{
     font-family:'Playfair Display', serif;
     font-size: 18px;
     text-align: center;
