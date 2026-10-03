@@ -11,43 +11,54 @@
     </head>
    <body>
     <header>
-         <a href="#" class="logo">Mbyelle Events Organizing Services</a>
-    <ul >
-      <li><a href="index.html">Home</a></li>
-      <li><a href="Services.html">Services</a></li>
-      <li><a href="About Us.html">About</a></li> 
-      <li><a href="Contact.html">Contact Us </a></li>
-    </ul>
-    </header>
-    <main>
+
+    <div class="logo">
+        Mbyelle Events Organizing Services
+    </div>
+
+    <button class="hamburger" id="hamburger">
+        ☰
+    </button>
+
+    <nav>
+        <ul id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+  <main>
    <div class="ContactUs-container">
-    <div ContactUs-img>
+      <div ContactUs-img>
       <img src="ContactUs.jpg" alt="ContactUs">
 
-    <div class="overlay"></div>
+      div class="overlay"></div>
 
-    <div class="Contact-text">
+      <div class="Contact-text">
       <h1>Contact Us</h1>
       <p>We’d love to hear from you. Get in touch with us for your special events</p>
-      </div>
+       </div>
     </div>
-    </div>
-   
-   
-  
     <section class="Quote">
       <h1>Send us a message for more Information</h1>
-
     </section>
-  
-</nav>
-</main>
+  </main>
+ 
+  <script>
+    const hamburger = document.getElementById ("hamburger");
+    const navLinks = document.getElementById ("navLinks");
+
+    hamburger.addEventLister("click", function(){
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
 
 </body>
-    </body>
-    </body>
     
     
-    </div>
-
-</html>
+  </html>
