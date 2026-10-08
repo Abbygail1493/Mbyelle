@@ -114,7 +114,7 @@
    
    }
 
-.Contact-text h1 {
+ .Contact-text h1 {
     font-family:'Playfair Display', serif;
     position: absolute;
     top: 50%;
@@ -125,6 +125,13 @@
     font-size: 30px;
     width: 90%;
 }
+.Quote-msg h1{
+    font-family:'Playfair Display', serif;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 30px;
+    color:rgb(94, 4, 4);
 
 .contact-form {
     width: 90%;
