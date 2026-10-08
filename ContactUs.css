@@ -21,7 +21,7 @@
     transform: translate(-50%, -50%);
     color:rgb(46, 1, 1);
     text-align: center;
-    font-size: clamp(2.5rem, 8vw, 5.5rem);
+    font-size: 30px;
     width: 90%;
 }
 
@@ -33,12 +33,12 @@
     transform: translate(-50%, -50%);
     color:rgb(46, 1, 1);
     text-align: center;
-   font-size: clamp(1rem, 1.5vw, 1.25rem);
+   font-size:25px;
     width: 90%;
 }
 .Quote-msg h1{
     font-family:'Playfair Display', serif;
-    font-size: 20px;
+    font-size: 25px;
     font-style: italic;
     text-align: center;
     margin-top: 30px;
@@ -100,3 +100,88 @@
     opacity: 0.85;
 }
 
+@media (min-width: 768px) and (max-width: 1023px){
+
+.ContactUs-container{
+  position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.ContactUs-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+   }
+
+.Contact-text h1 {
+    font-family:'Playfair Display', serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:rgb(46, 1, 1);
+    text-align: center;
+    font-size: clamp(2.5rem, 8vw, 5.5rem);
+    width: 90%;
+}
+
+.contact-form {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    align-items: center;
+    padding: 30px;
+    background-color: #d6d1d1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+     color: rgb(46, 1, 1) ;
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(46, 1, 1);
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border: 2px solid rgb(46, 1, 1);
+}
+
+.contact-form button {
+    width: auto;
+    padding: 12px 30px;
+    background-color: rgb(243, 179, 198);
+    color:rgb(46, 1, 1); 
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.contact-form button:hover {
+    opacity: 0.85;
+}
+
+
+}
