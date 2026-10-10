@@ -36,16 +36,14 @@
    font-size:30px;
     width: 90%;
 }
-.Quote-msg {
-    display: block;
-    width: 100%;
-    margin: 30px auto;
-    padding: 10px 15px;
-    box-sizing: border-box;
-    text-align: center;
-}
+  .Quote-msg{
 
-.Quote-msg h1 {
+    padding:30px;
+    margin-top: 20px;
+
+
+ }
+.Quote-msg h1{
     font-family: 'Playfair Display', serif;
     position: static;
     font-size: 25px;
