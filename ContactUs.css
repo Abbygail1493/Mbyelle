@@ -37,14 +37,15 @@
     width: 90%;
 }
   .Quote-msg{
-
-    padding:30px;
-    margin-top: 20px;
-
+   display: block;
+    width: 100%;
+    margin: 30px auto;
+    padding: 10px 15px;
+    text-align: center;
 
  }
 .Quote-msg h1{
-    font-family: 'Playfair Display', serif;
+   font-family: 'Playfair Display', serif;
     position: static;
     font-size: 25px;
     font-style: italic;
