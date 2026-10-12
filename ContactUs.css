@@ -106,4 +106,25 @@
 .contact-form button:hover {
     opacity: 0.85;
 }
+@media(min-width:768px)and(max-width:1023px){
+
+.ContactUs-container{
+  position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.ContactUs-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+   }
+   .Contact-text h1{
+    position:absolute;
+    font-size: 30px;
+
+   }
+}
 
