@@ -1,102 +1,169 @@
 
-/* CONTACT US HERO SECTION */
-.ContactUs-container {
-    position: relative;
+.ContactUs-container{
+   position: relative;
     width: 100%;
-    height: 100vh;
-    min-height: 450px;
+    height: 70vh;
+    min-height: 300px;
+    max-height: 600px;
     overflow: hidden;
 }
 
-/* Background Image */
-.ContactUs-container img {
-    display: block;
-    width: 100%;
+.ContactUs-img img{
+   width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
-}
+  
+   }
 
-/* Text Overlay */
-.Contact-text {
+.Contact-text h1 {
+    font-family:'Playfair Display', serif;
     position: absolute;
     top: 50%;
     left: 50%;
+    margin-top: 30x;
     transform: translate(-50%, -50%);
-    width: 90%;
+    color:rgb(46, 1, 1);
     text-align: center;
-    color: white;
-    z-index: 2;
+    font-size: 40px;
+    width: 90%;
 }
 
-/* Contact Us Heading */
-.Contact-text h1 {
-    font-family: 'Playfair Display', serif;
-    color:rgb(46, 1, 1);
-    font-size: clamp(36px, 5vw, 60px);
-    font-weight: bold;
-    margin: 0 0 15px;
-    line-height: 1.2;
-}
-
-/* Subtitle */
 .Contact-text p {
-    font-family: 'Poppins', sans-serif;
-    font-size: clamp(14px, 2vw, 20px);
+    font-family:'Playfair Display', serif;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color:rgb(46, 1, 1);
-    margin: 0;
-    line-height: 1.6;
+    text-align: center;
+   font-size:30px;
+    width: 90%;
+}
+  
+
+ 
+.Quote-msg h1{
+   font-family: 'Playfair Display', serif;
+    position: static;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(94, 4, 4);
+    line-height: 1.5;
 }
 
-/* TABLET MEDIA QUERY */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .ContactUs-container {
-        height: 80vh;
-        min-height: 400px;
-        max-height: 650px;
-    }
-
-    .Contact-text {
-        top: 50%;
-        left: 50%;
-        width: 85%;
-        transform: translate(-50%, -50%);
-    }
-
-    .Contact-text h1 {
-        font-size: 48px;
-        margin-bottom: 12px;
-    }
-
-    .Contact-text p {
-        font-size: 18px;
-    }
+.contact-form {
+    width: 90%;
+    height: 80%;
+    max-width: 600px;
+    margin: 60px auto;
+    align-items: center;
+    padding: 30px;
+    background-color: #d6d1d1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    box-sizing: border-box;
 }
-/* PHONE MEDIA QUERY */
-@media(max-width: 767px) {
-    .ContactUs-container {
-        height: 60vh;
-        min-height: 350px;
-        max-height: 500px;
-    }
 
-    .ContactUs-container img {
-        object-position: center;
-    }
-
-    .Contact-text {
-        top: 50%;
-        left: 50%;
-        width: 90%;
-        transform: translate(-50%, -50%);
-    }
-
-    .Contact-text h1 {
-        font-size: 34px;
-        margin-bottom: 10px;
-    }
-
-    .Contact-text p {
-        font-size: 14px;
-    }
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+     color: rgb(46, 1, 1) ;
+    font-weight: 600;
 }
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(46, 1, 1);
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border: 2px solid rgb(46, 1, 1);
+}
+
+.contact-form button {
+    width: auto;
+    padding: 12px 30px;
+    background-color: rgb(243, 179, 198);
+    color:rgb(46, 1, 1); 
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.contact-form button:hover {
+    opacity: 0.85;
+}
+@media(min-width:768px)and(max-width:1023px){
+
+.ContactUs-container{
+  position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.ContactUs-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+   }
+   .Contact-text h1{
+    position:absolute;
+    font-size: 30px;
+
+   }
+   .Contact-text h1 {
+    font-family:'Playfair Display', serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 30x;
+    transform: translate(-50%, -50%);
+    color:rgb(46, 1, 1);
+    text-align: center;
+    font-size: 40px;
+    width: 90%;
+}
+
+.Contact-text p {
+    font-family:'Playfair Display', serif;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:rgb(46, 1, 1);
+    text-align: center;
+   font-size:30px;
+    width: 90%;
+}
+  
+
+ 
+.Quote-msg h1{
+   font-family: 'Playfair Display', serif;
+    position: static;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(94, 4, 4);
+    line-height: 1.5;
+}
+}
+
