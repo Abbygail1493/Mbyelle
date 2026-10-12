@@ -32,6 +32,7 @@
 /* Contact Us Heading */
 .Contact-text h1 {
     font-family: 'Playfair Display', serif;
+    color:rgb(46, 1, 1);
     font-size: clamp(36px, 5vw, 60px);
     font-weight: bold;
     margin: 0 0 15px;
@@ -42,12 +43,37 @@
 .Contact-text p {
     font-family: 'Poppins', sans-serif;
     font-size: clamp(14px, 2vw, 20px);
+    color:rgb(46, 1, 1);
     margin: 0;
     line-height: 1.6;
 }
 
+/* TABLET MEDIA QUERY */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .ContactUs-container {
+        height: 80vh;
+        min-height: 400px;
+        max-height: 650px;
+    }
+
+    .Contact-text {
+        top: 50%;
+        left: 50%;
+        width: 85%;
+        transform: translate(-50%, -50%);
+    }
+
+    .Contact-text h1 {
+        font-size: 48px;
+        margin-bottom: 12px;
+    }
+
+    .Contact-text p {
+        font-size: 18px;
+    }
+}
 /* PHONE MEDIA QUERY */
-@media screen and (max-width: 767px) {
+@media(max-width: 767px) {
     .ContactUs-container {
         height: 60vh;
         min-height: 350px;
@@ -72,30 +98,5 @@
 
     .Contact-text p {
         font-size: 14px;
-    }
-}
-
-/* TABLET MEDIA QUERY */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    .ContactUs-container {
-        height: 65vh;
-        min-height: 400px;
-        max-height: 650px;
-    }
-
-    .Contact-text {
-        top: 50%;
-        left: 50%;
-        width: 85%;
-        transform: translate(-50%, -50%);
-    }
-
-    .Contact-text h1 {
-        font-size: 48px;
-        margin-bottom: 12px;
-    }
-
-    .Contact-text p {
-        font-size: 18px;
     }
 }
