@@ -120,13 +120,13 @@
    }
 
 .Contact-text p {
-   font-size:18px;
+   font-size:16px;
 }
   
 .Quote-msg h1{
    font-family: 'Playfair Display', serif;
     position: static;
-    font-size: 25px;
+    font-size: 20px;
     font-style: italic;
     text-align: center;
     margin: 0 auto;
@@ -134,4 +134,14 @@
     line-height: 1.5;
 }
 }
+@media(max-width:767px){
+
+    .ContactUs-container{
+    position: relative;
+    width: 100%;
+    height:70vh;
+    overflow: hidden;
+}
+}
+
 
