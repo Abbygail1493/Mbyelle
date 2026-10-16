@@ -18,7 +18,7 @@
 .Contact-text h1 {
     font-family:'Playfair Display', serif;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color:rgb(46, 1, 1);
