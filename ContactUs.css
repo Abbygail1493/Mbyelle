@@ -158,39 +158,7 @@
         object-fit: cover;
     }
 
-    /* Text overlay on image */
-    .Contact-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 90%;
-        text-align: center;
-        color: rgb(46, 1, 1);
-        z-index:1;
-    }
-
-    .Contact-text h1 {
-        position: static;
-        transform: none;
-        font-size: 28px;
-        
-    }
-
-    .Contact-text p {
-        position: static;
-        transform: none;
-        font-size: 17px;
-        margin: 0;
-    }
-
-    /* Quote message */
-    .Quote-msg h1 {
-        font-size: 20px;
-        padding: 5px;
-        margin: 0 0 12px;
-    }
-
+    
     /* Contact form */
     .contact-form {
         width: 95%;
