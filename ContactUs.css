@@ -148,11 +148,7 @@
 @media(max-width:767px){
 
     .ContactUs-container {
-        position: relative;
-        width: 100%;
-        height: 400px;
-        min-height: 300px;
-        overflow: hidden;
+       height: 60vh;
     }
 
     .ContactUs-img img {
