@@ -15,19 +15,42 @@
   
    }
 
-.Contact-text h1,
-.Contact-text p {
-    font-family:'Playfair Display', serif;
+
+.Contact-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color:rgb(46, 1, 1);
-    text-align: center;
-    font-size: 28px;
     width: 90%;
+    z-index: 2;
+    text-align: center;
 }
 
+.Contact-text h1,
+.Contact-text p {
+    position: static;
+    transform: none;
+    font-family: 'Playfair Display', serif;
+    color: rgb(46, 1, 1);
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.Contact-text h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.Contact-text p {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 .Quote-msg h1{
    font-family: 'Playfair Display', serif;
@@ -94,7 +117,7 @@
 .contact-form button:hover {
     opacity: 0.85;
 }
-@media(min-width:768px)and(max-width:1023px){
+@media (min-width: 768px) and (max-width: 1023px) {
 
 .ContactUs-container{
   position: relative;
@@ -124,15 +147,14 @@
 
 }
 }
-@media(max-width:767px){
 
+   
+@media (max-width: 767px) {
 
     .ContactUs-container {
-        position: relative;
-        width: 100%;
         height: 60vh;
         min-height: 350px;
-        overflow: hidden;
+        max-height: 600px;
     }
 
     .ContactUs-img {
@@ -148,38 +170,23 @@
         object-position: center;
     }
 
-    /* Center both texts together over the image */
     .Contact-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 90%;
-        text-align: center;
-        z-index: 2;
+        width: 92%;
     }
 
     .Contact-text h1 {
-        position: static;
-        transform: none;
-        margin: 0 0 10px;
         font-size: 32px;
-        line-height: 1.2;
+        margin-bottom: 10px;
     }
 
     .Contact-text p {
-        position: static;
-        transform: none;
-        margin: 0;
         font-size: 17px;
         line-height: 1.4;
     }
 
-    /* Contact form */
     .contact-form {
         width: 95%;
         height: auto;
-        max-width: 600px;
         margin: 30px auto;
         padding: 20px;
         box-sizing: border-box;
