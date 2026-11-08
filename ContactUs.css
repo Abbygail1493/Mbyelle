@@ -127,10 +127,6 @@
     overflow: hidden;
 }
 
-   .Contact-text h1{
-    font-size:clamp(2.5rem, 8vw, 5.5rem);
-
-   }
 
 .Contact-text p {
    font-size:16px;
@@ -176,8 +172,8 @@
     }
 
     .Contact-text h1 {
-        font-size: 32px;
-        margin-bottom: 10px;
+        font-size: 60px;
+      margin-bottom: 10px;
     }
 
     .Contact-text p {
